@@ -1,0 +1,41 @@
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h0 h1 h2 
+*** Adding switches:
+s0 s1 s2 
+*** Adding links:
+(h0, s0) (h1, s1) (h2, s2) (s0, s1) (s0, s2) 
+*** Configuring hosts
+h0 h1 h2 
+*** Starting controller
+c0 
+*** Starting 3 switches
+s0 s1 s2 ...
+*** Waiting for switches to connect
+s0 s1 s2 
+h0 h0-eth0:s0-eth1
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s2-eth1
+*** Ping: testing ping reachability
+h0 -> h1 h2 
+h1 -> h0 h2 
+h2 -> h0 h1 
+*** Results: 0% dropped (6/6 received)
+*** Stopping 1 controllers
+c0 
+*** Stopping 5 links
+.....
+*** Stopping 3 switches
+s0 s1 s2 
+*** Stopping 3 hosts
+h0 h1 h2 
+*** Done
+Arquivo topologia:  rede-simples.txt
+Carregando topologia
+Criar rede
+Dumping host connections
+Testing network connectivity
+===========================
+All Network Nodes Connected
+===========================
